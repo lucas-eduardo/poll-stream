@@ -1,6 +1,6 @@
 # NLW Expert (Node.js)
 
-Bem-vindo ao Real-Time Polling System, um sistema de votação em tempo real onde os usuários podem criar enquetes e outros usuários podem votar. Este sistema foi construído com Node.js e utiliza WebSockets para atualizações em tempo real, PostgreSQL para armazenamento de dados e Redis para gerenciamento de estado de votação em tempo real.
+Poll Stream, um sistema de votação em tempo real onde os usuários podem criar enquetes e outros usuários podem votar. Este sistema foi construído com Node.js e utiliza WebSockets para atualizações em tempo real, PostgreSQL para armazenamento de dados e Redis para gerenciamento de estado de votação em tempo real.
 
 ## Tecnologias Utilizadas
 - TypeScript
