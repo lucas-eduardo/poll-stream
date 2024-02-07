@@ -1,0 +1,39 @@
+{
+  "name": "poll-stream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "env-cmd -f .env tsx watch src/http/server.ts",
+    "migrate": "env-cmd -f .env tsx src/db/migrate.ts",
+    "generate": "env-cmd -f .env drizzle-kit generate:pg",
+    "seed": "env-cmd -f .env tsx src/db/seed.ts",
+    "studio": "drizzle-kit studio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@lucaseduardoio/eslint-config": "^1.2.0",
+    "@types/node": "^20.11.16",
+    "drizzle-kit": "^0.20.14",
+    "eslint": "^8.56.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "pg": "^8.11.3",
+    "prisma": "^5.9.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^9.3.1",
+    "@fastify/websocket": "^8.3.1",
+    "@paralleldrive/cuid2": "^2.2.2",
+    "@prisma/client": "5.9.1",
+    "drizzle-orm": "^0.29.3",
+    "env-cmd": "^10.1.0",
+    "fastify": "^4.26.0",
+    "ioredis": "^5.3.2",
+    "postgres": "^3.4.3",
+    "zod": "^3.22.4"
+  }
+}

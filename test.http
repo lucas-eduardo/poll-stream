@@ -1,0 +1,23 @@
+POST http://localhost:3333/polls HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Qual a melhor linguagem de programação?",
+    "options": [
+      "JavaScript"
+    ]
+}
+
+###
+
+GET http://localhost:3333/polls/wh8ggmpbazdlt5ep9z9ywfkq HTTP/1.1
+content-type: application/json
+
+###
+
+POST http://localhost:3333/polls/wh8ggmpbazdlt5ep9z9ywfkq/votes HTTP/1.1
+content-type: application/json
+
+{
+    "pollOptionId": "kof9dqf8448ss43yc1r9cir3"
+}
